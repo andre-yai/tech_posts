@@ -1,0 +1,12 @@
+overfitting:
+  id: 1
+  title: "[Explaning] Overfitting."
+  Data: today
+  type: post
+  content: markdowns/Overfitting.md
+  main_image: https://pbs.twimg.com/media/DdkUUTMV4AAsohU.jpg
+  short_text: "Overfitting is one of the biggest problems in machine learning."
+
+
+#  images: images/
+# 
