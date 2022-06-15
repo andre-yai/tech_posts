@@ -55,7 +55,7 @@ class Catalog:
                 catalog.formatMarkdownPost(post["title"], post_content, post["tags"], post["status"])
         
 if __name__ == '__main__':
-    fileCatalog = "./../post_manager.yml"
+    fileCatalog = "./post_manager.yml"
     catalog = Catalog(fileCatalog)
     catalog.sendNewPosts()
      
