@@ -11,13 +11,11 @@ class Medium:
                 'Content-Type': 'application/x-www-form-urlencoded'
         }
         self.my_info = self.getMyInfo()
-        print("My info",self.my_info)
         #self.my_publications = self.getPublications()
         #print(json.dumps(self.my_publications, indent=4, sort_keys=True))
     
     def getMyInfo(self):
         info_url = self.BASE_URL + "/me"
-        print(self.headers)
         response = requests.get(info_url, headers=self.headers)
         return json.loads(response.text)['data']
     
@@ -38,23 +36,9 @@ class Medium:
         user_id = self.my_info['id']
         url_post = self.BASE_URL + f"/users/{user_id}/posts"
         response = requests.post(url_post, headers=self.headers, data=post_content)
-        print(response.text)
         return json.loads(response.text)
 
-if __name__ == '__main__':
-    access_token = environ.get('access_token')
-    medium_user = Medium(access_token)
-    new_post = {
-                "title": "My react website",
-                "contentFormat": "markdown",
-                "content": "Link to my latest react project [Andre Web Page](http://frontend.andreyai.com) ",
-                "canonicalUrl": "http://frontend.andreyai.com",
-                "tags": ["tech","react","software_eng"],
-                "publishStatus": "draft"
-            }
-    medium_user.post2Medium(new_post)
     #publications = medium_user.showPosts()
     #print(json.dumps(publications, indent=4, sort_keys=True))
     #publications = medium_user.getPublications()
     #print(json.dumps(publications, indent=4, sort_keys=True))
-    
