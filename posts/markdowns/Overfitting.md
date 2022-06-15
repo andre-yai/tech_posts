@@ -2,16 +2,13 @@
 
 # **Explaining** Overfitting!!
 
-Overfitting is one of the biggest problems in machine learning models. It happens when a model is too ajusted to the training dataset. So when we train with new data the model loose it performace.
+Overfitting is one of the biggest problems in machine learning models. It happens when a model is too ajusted to the training dataset. So that, it lose performance when predicting on new dataset. In this article I will present a simple overview and how we can avoid this problem.
 
-## How it usually happens?
-- Unbalanced Data.
-- No use of splitting data. No partition on training, validation and testing.
-- No use of crossvalidation.
-- Use of some complex models. Example: ramdom forest, xgboosting, neural networks, deep learning.
+A machine learning model is constructed on using a sample dataset. However, this dataset sometimes does not represent the whole scenario of the data population. Therefore a model constructed on it will tend to overfitted becoming too ajusted to data presented on the dataset and leading to potencial problems when applied to new dataset. 
 
 ## How to avoid.
-- Graphic comparing performace.
-- Training on more data.
-- Bigger learning rate.
-
+There are some ways to prevent overfitting in our model by:
+- adding more data.
+- reducing number of features. 
+- dealing with Regularization.
+- early stopping.

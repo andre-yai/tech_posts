@@ -1,2 +1,3 @@
-credentials/*
+.credentials/
+.credentials/*
 src/integrations/linkedin.py
