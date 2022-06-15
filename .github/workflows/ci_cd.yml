@@ -36,7 +36,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Post to Medium
       env:
-          MEDIUM_TOKEN: ${{ secrets.MEDIM_TOKEN }}
+          MEDIUM_TOKEN: ${{ secrets.MEDIUM_TOKEN }}
       run: |
         python src/main.py
     - name: Configure AWS credentials
