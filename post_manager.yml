@@ -1,7 +1,7 @@
 overfitting:
   title: "Brief Explaning Overfitting."
   Data: today
-  content_file: "./../posts/markdowns/Overfitting.md"
+  content_file: "./posts/markdowns/Overfitting.md"
   main_image: https://pbs.twimg.com/media/DdkUUTMV4AAsohU.jpg
   short_text: "Overfitting is one of the biggest problems in machine learning."
   status: "draft"
