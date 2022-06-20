@@ -1,12 +1,20 @@
 overfitting:
   title: "Brief Explanation About Overfitting."
   Data: today
-  content_file: "./posts/markdowns/Overfitting.md"
+  content_file: "./posts/ml/Overfitting.md"
   main_image: https://pbs.twimg.com/media/DdkUUTMV4AAsohU.jpg
   short_text: "Overfitting is one of the biggest problems in machine learning."
   status: "draft"
   tags: ["MachineLearning", "DataScience"]
 
+aws_certifications:
+  title: "AWS Certification Path for Data Professionals."
+  Data: today
+  content_file: "./posts/cloud/aws/aws_certifications.md"
+  main_image: https://home.pearsonvue.com/getattachment/Clients/Amazon-Web-Services/TnC_Certification-Framework-white_1300x960.png.aspx?lang=en-US
+  short_text: "Nowadays, many companies are migrating from their on-premise stations to cloud."
+  status: "draft"
+  tags: ["Cloud", "MachineLearning","Big Data"]
 
 #  images: images/
 # 
