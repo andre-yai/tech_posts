@@ -59,4 +59,3 @@ if __name__ == '__main__':
     catalog = Catalog(fileCatalog)
     catalog.sendNewPosts()
      
-          

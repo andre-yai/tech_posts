@@ -115,7 +115,7 @@ Price: 300 USD
 
 | Domain |  % of Exam |
 |--------|------------|
-| 1. Data Enginnering | 20% |
+| 1. Data Engineering | 20% |
 | 2. Data Analysis | 24% |
 | 3. Modelling | 36% |
 | 4. Machine Learning Implementation and Operations | 20%|
