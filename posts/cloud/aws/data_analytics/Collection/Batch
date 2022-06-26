@@ -1,0 +1,67 @@
+Batch - Historical Analysis
+- Snowball
+- Data Pipeline
+
+DMS - Database Migration Service
+- Resilient and self healing
+- Data remains available after migration
+- Supports: Homogeneous and Heterogeneous Migrations.
+- Continuous Data Replication using CDC
+- EC2 instance to perform the replication task.
+
+Sources
+- OnPremise, Aurora, RDS, Azure SQL Database 
+Destination
+- OnPremise and EC2 instances. RDS, Redshift, DynamoDB, S3, ElasticSearch,
+Kinesis, DocumentDB.
+
+# Schema Conversion Tool
+- Not same engine do a schema convertion.
+- OLTP , OLAP
+
+
+# Direct Connect.
+- Provides a dedicated private connection from a remote network to your VPC
+- Dedicated connection must be setup between your DC and AWS Direct Connection locations.
+- Need to setup VP Gateway to your VPC.
+- Access S3 and EC2 
+- Increase bandwith throughput
+- More consistent network experience.
+- Hybrid environment.
+- Direct Connect Gateway: Connect to diferent regions.
+
+- Dedicated Connections
+- Hosted Connection
+- Lead time to set new connections longer than 1 month to establish a new connection.
+
+Security
+- No encryption but is private. 
+- Provides a IPsec connection. But difficult to implement.
+
+Resilent
+- High Resilient: One connection at multiple locations.
+- Maximum: seperate connection terminating on separate devices in more than one location.
+
+
+# Snow Familiy
+
+- High-secure, portable devices to collect and process data at the edge and migrate data to AWS.
+- Migration: Snowcone, Snowball Edge, Snowmobile.
+- Edge: Snowcone, Snowball Edge
+- Challenges: Limited connectivity, bandwidthm network cost, bandwidth.
+
+## SnowCone
+- Migration: light, secure, 8TB. AWS DataSync.  24PB online and offline
+- Edge: Process computation on edge location. Doing ML, Process Data.
+
+## Snowball Edge
+- Migration: 80TB. Petabyte
+- Edge: Process computation on edge location. Doing ML, Process Data
+
+## SnowMobile
+- Migration: Truck. 1EB = 100PB
+- High Secure.
+
+
+## OpsHub.
+Software configure Snow Family devices. 

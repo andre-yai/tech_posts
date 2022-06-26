@@ -1,0 +1,26 @@
+# IoT Core
+
+## IoT Thing
+- External Object 
+
+# Thing Registry
+- Register IoT. 
+- Like IAM to IoT
+- Certifications X.509
+- AWS IoT polices, AIM Polices
+
+# Device Gateway
+- Connect IoT to AWS.
+
+# Iot Message Broker
+- Orchestrate actions send message from AWS and IOT Components.
+- MQTT, PUT/SUB
+
+# IoT Rules Engine
+Comunicates IOT with AWS Services
+
+# IoT GreenGrass
+- Execute Lambda on IoT
+
+# Device Shadow
+Mimic IoT

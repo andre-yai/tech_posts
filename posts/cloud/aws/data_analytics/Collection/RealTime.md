@@ -201,3 +201,110 @@ Consumer side:
 - Data Stream : if you want to do real time analytics.
 - Firehouse : if you want to near real time convert or store in S3, Redshift, elaticSearch
 - Lambda: if you want to real time load.
+
+
+# SQS
+- Producers and Consumers
+- Fully managed
+- Data Retention: 4 to 14 days
+- Scales from 1 message per second to 10,000s per second
+- No limit to how many messages can be in the queue
+- Low latency (< 10ms)
+- Horizontal scaling in terms of number
+- Can have duplicate messages (at least once delivered, occasionally)
+- Can have out of order messages (best effort ordering)
+- Limitation to 256KB per message sent.
+- Message content is XML, JSON, Unformatted text.
+- Pricing: Network and Request.
+
+Message
+- Message Body, String
+
+Consummers
+- Poll SQS messages (10 messages at a time) max 256 KB
+- Process the message with timeout
+- Delete message using ID 
+
+FIFO Queue
+- First In, First out Ordering
+- 5 min de-duplication
+- name of the queue must end in .fifo
+- lower throughput (3000 per second batching and 300/s without)
+
+SQS Extendend Client
+- Uses S3 bucket. With message metadata.
+
+Use Cases 
+- Decouple applications
+- Buffer writes to a database
+- Handle large loads of messages coming in (email sender)
+- SQS can be Auto Scaling through CloudWatch.
+
+Security
+- HTTPS and KMS
+
+## Kinesis vs SQS
+- Data consumed many times
+- Deleted after retention period
+- Odering is preserved. 
+- Build multiples applications reading form the same stream.
+- Streaming Map Reduce
+- Checkpoint to track progress
+- Shards mus be provisioned.
+
+# SQS 
+- Ordering processing, 
+- Image Processing
+- Auto scaling queuees 
+- Buffer and Batch messages
+- Request Offloading
+
+# KDS
+- Fast log
+- RealTime metrics
+- Mobile data capture
+- Real Time data analytics
+- Game data feed
+- Complex Stream
+- Data Feed.
+
+# AMS MSK
+- Alternative Kinesis
+- Kafka on ASK. 
+- More Custom confguration. Large messages 1GB.
+
+- Add broker over time.
+
+Security.
+- Encryptoion TLS within brokers and clients.
+- Authentication and Authorization.
+        - Need to be defined on Kafka.
+- CloudWach Metrics and 3 message logs.
+
+## MSK Connect
+- Connect Kafka Connect workers on AWS.
+- Auto-scaling capability for workers.
+
+## MSK Serverless
+- Not manage capacity. 
+- Scales compute & storage
+- Declare only topics and partitions.
+- IAM Access Control for all clusters.
+
+# Kafka Data Stream vs MSK
+Kinesis
+-  1MB limit
+- Streams with Shards.
+- Shard merging and spliting
+- KMS at rest
+- IAM polices for AuthN/AuthZ
+
+MSK
+- default 1MB can go higher.
+- Topics with Partitions.
+- Add partitions to topic
+- KMS at rest.
+Security
+- Mutual TLS + Kafka ACLs
+- SASL/SCRAM
+- IAM Acess Control.
