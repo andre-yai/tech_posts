@@ -1,0 +1,25 @@
+Kinesis Data Analytics
+- Up to 32GB in memory processing.
+- Receive Data
+- Aggregate and compute results.
+- Spead results
+- Operate over windows of time
+- Reference tables: join data for quick lookups.
+- Lambda: can be a destination as well
+- Allow lots of flexibility for post-processing
+    - Aggregating rows, different formats
+- Apache Flink
+    - Supports Java and Flink
+    - Process data from Kinesis
+    - Serverless
+    - Data Stream -> Sinks -> S3, Data Stream, Firehouse
+
+- Common uses
+    - ETL
+    - Continuous metric generation
+    - Responsive analytics
+- Kinesis Analytics
+- Pay only for resources consumed
+- Serverless: scales automatically
+- Schema discovery.
+- RANDOM_CUT_FOREST: SQL function used for anomaly detection on numeric columns in a stream. 
