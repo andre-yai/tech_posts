@@ -29,7 +29,7 @@ def create_wordCloud(text, mask_image_name, export_image_name):
 
 # TODO: Get from other text sources.
 page_name = "Coronavirus Brazil"
-mask_mage_name = 'Brazil.png'
+mask_image_name = 'Brazil.png'
 export_image_name = "corona_brazil_wc.png"
 text = get_WikiPage(page_name)
 create_wordCloud(text,mask_image_name, export_image_name)
