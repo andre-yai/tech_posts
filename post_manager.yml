@@ -19,7 +19,7 @@ aws_certifications:
 first_components_aws:
   title: "Serviços AWS que todos deveriam conhecer."
   Data: today
-  content_file: "./posts/cloud/aws/first_components_aws"
+  content_file: "./posts/cloud/aws/first_components_aws.md"
   main_image: https://cloudcomputinggate.com/wp-content/uploads/2022/03/AWS-Cloud-Foundation.jpg
   short_text: "Atualmente muitas empresas estão cada vez mais migrando as aplicações dos seus próprios servidores para os ambientes cloud."
   status: "draft"
