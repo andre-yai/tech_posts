@@ -1,6 +1,5 @@
 
-## Defining MLOps
-
+## Rise of MLOps
 Recently, we have seen an rapidily growth of data science and machine learing in industry. With that some challenges has begin to appear. 
 Problems like: 
 - Productionazing machine learning projects.
