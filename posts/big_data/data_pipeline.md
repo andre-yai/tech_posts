@@ -22,26 +22,7 @@ Data governance consists on data management, data quality, data steward. This he
 
 Some services that help with thare are AWS Glue Catalog, AWS LakeFormation, GCP Data Catalog, GCP Data Loss Prevention.
 
-
 ## Analyze
 This part is responsable for extracting value from data by performing data analysis, machine learning and data visualization. This consistis in extracting meaning from data by showing how it is organized, grouping and predicting it.
 
 Some services that help with that would be AWS Sagemaker, AWS QuickSight, GCP BigQuery, GCP Vertex AI, GCP Looker, GCP Data Studio, Azure ML, Azure Databricks, Azure Data Studio.
-
-
-# Job market
-
-There has been an increase job opportunities
-
-# Data Engineers
-
-# Data Architect
-
-# Data Governance
-
-# Business Inteligence
-
-# Data Scientists
-
-# Machine Learning Engineers/ MLOps Engineers
-
