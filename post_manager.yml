@@ -17,7 +17,7 @@ aws_certifications:
   tags: ["Cloud", "MachineLearning","Big Data"]
 
 first_components_aws:
-  title: "Serviços AWS que todos deveriam conhecer."
+  title: "Top Serviços AWS que todos deveriam conhecer."
   Data: today
   content_file: "./posts/cloud/aws/first_components_AWS.md"
   main_image: https://cloudcomputinggate.com/wp-content/uploads/2022/03/AWS-Cloud-Foundation.jpg
@@ -28,7 +28,7 @@ first_components_aws:
 data_pipeline:
   title: "Getting to know more about data pipeline."
   Data: today
-  content_file: "./posts/cloud/big_data/data_pipeline.md"
+  content_file: "./posts/big_data/data_pipeline.md"
   main_image: https://cloudcomputinggate.com/wp-content/uploads/2022/03/AWS-Cloud-Foundation.jpg
   short_text: "With the increase of computational and storage power, companies has been collecting more data than ever. This leading the need of new tasks and jobs opportunities."
   status: "draft"
